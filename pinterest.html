@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinterest model</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto fit, minmax(100px,1fr));
+            grid-gap: 8px;
+            grid-auto-flow: dense;
+
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+
+        }
+        .horizental{
+            grid-column: auto / span 2;
+        }
+        .vertical{
+            grid-row: auto / span 2 ;
+        }
+        .big{
+            grid-column: auto / span 2;
+            grid-row:  auto / span 2;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div> <img src="img/animation.jpg" alt=""></div>
+        <div class="vertical"> <img src="img/apartment.jpg" alt=""></div>
+        <div class="horizental"><img src="img/baby.jpg" alt=""></div>
+        <div><img src="img/bike.jpg" alt=""></div>
+        <div><img src="img/car.jpg" alt=""></div>
+        <div class="big"><img src="img/couple.jpg" alt=""></div>
+        <div><img src="img/cycle.jpg" alt=""></div>
+        <div class="horizental"><img src="img/animation.jpg" alt=""></div>
+        <div class="vertical"><img src="img/football.jpg" alt=""></div>
+
+        <div><img src="img/pc.jpg" alt=""></div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Website layout
+    </title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 02fr 1.5fr 1.2fr 0.8fr ;
+            grid-template-areas:"nav nav nav nav"
+            "sidebar main main main"
+            " sidebar box1 box2 box3"
+            "sidebar footer footer footer";
+            grid-gap: 10px;
+            text-align: center;
+
+
+
+        }
+        .container nav{
+            background-color: rgb(205, 234, 224);
+            
+
+          grid-area: nav;
+        }
+        .container main{
+            background-color: rgb(179, 167, 188);
+            grid-area: main;
+            color: aliceblue;
+        }
+        .container main a{
+            text-decoration: none;
+            color: rgb(23, 16, 154);
+        }
+        .headline{
+            background-color: rgb(192, 198, 224);
+            grid-area: sidebar;
+        }
+        .box1{
+            background-color: rgb(28, 196, 98);
+            grid-area: box1;
+        }
+        .box2{
+            background-color: rgb(106, 221, 6);
+            grid-area: box2;
+        }
+        .box3{
+            background-color: gold;
+            grid grid-area: box3;
+        }
+        .container footer{
+            background-color: rgb(140, 82, 11);
+             grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav> <b> The daily updates</b>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quibusdam eveniet suscipit aperiam magnam reiciendis doloribus, debitis tempore repudiandae tempora consectetur soluta maxime illum eaque iusto perferendis nesciunt atque ipsum hic, deleniti eum architecto molestias quas! Nulla libero debitis assumenda, fuga deleniti ipsam impedit perferendis earum accusantium et doloremque ducimus, illum quidem similique, sequi nisi consectetur totam sint nihil asperiores natus saepe nam architecto. Nostrum, laborum rem reprehenderit aliquam voluptatibus quibusdam fugit reiciendis doloribus quam tempore enim repellendus, fugiat inventore exercitationem. Quibusdam minus totam ut consectetur cumque praesentium maiores quo unde cum reiciendis provident, optio quaerat, distinctio est tempora. Et dolorum voluptatem fuga laboriosam? Suscipit fugit quo, molestias nihil culpa quaerat iure nemo eveniet nisi sed laudantium. Sint aspernatur, vitae porro ut eligendi, accusamus et maiores ducimus sapiente excepturi praesentium quos dolorem alias consequatur! At assumenda, deserunt ut veritatis, tenetur rerum sequi rem aliquam molestias consequuntur consequatur voluptates? Esse labore pariatur ex enim eum vitae provident totam cum modi a voluptatibus perspiciatis cupiditate laborum amet sint, nobis dicta quo maxime excepturi, earum deserunt quisquam blanditiis sapiente quasi. At ut hic exercitationem quae dolorem distinctio repudiandae tenetur accusamus. Natus impedit quod esse consequatur, ducimus ad, corrupti rerum quia quasi earum dolore sunt. Perferendis dolorem magni asperiores repudiandae, necessitatibus dolor eos sequi natus explicabo consectetur quaerat. Id, aliquam quo quisquam ipsam veritatis dicta sequi mollitia dolorem aliquid ad in consectetur, eaque magnam delectus porro at voluptates aut harum et! Exercitationem commodi similique delectus eum deleniti sequi optio et distinctio cum suscipit. Minus necessitatibus, similique obcaecati asperiores ad blanditiis ullam maxime perferendis quam quas, sint, repellat assumenda ex nisi neque! Rem sunt, tempore architecto ducimus suscipit quae quos odio repudiandae exercitationem id praesentium aspernatur excepturi deserunt laudantium fugit expedita similique vel ipsa ullam libero! Ipsam ipsa doloremque voluptatem consequatur dignissimos ex fugiat ad delectus quaerat non quisquam natus, magnam provident culpa accusamus commodi vel animi at itaque, nulla, nemo tempore. Recusandae voluptatem itaque obcaecati atque dolorem facilis cupiditate exercitationem aliquid nesciunt esse quos iste voluptatum tempora nam porro veritatis natus molestiae, dolor ad beatae adipisci rem ipsam laboriosam. Consequuntur aliquam nemo molestiae error laudantium autem iusto est similique harum, quia minima. Pariatur accusantium neque modi magni nisi! Fugiat quisquam adipisci assumenda quod perferendis beatae error rem voluptatem, laboriosam quae est quos ullam iusto sapiente, blanditiis molestiae vero provident necessitatibus nobis. Optio odio nobis, minima laudantium nesciunt at ducimus numquam non, accusantium, quibusdam ratione commodi explicabo unde quod possimus ab rerum. Praesentium culpa aliquam obcaecati eligendi quos. Aperiam magnam molestiae culpa architecto doloremque, quae sint delectus vero harum error? Pariatur fugit vitae, possimus magni nisi unde fuga dicta. Officia, magnam unde? Omnis molestiae sint, alias nobis, at est sunt nulla sequi laudantium ea quo, ab vero optio eveniet praesentium rerum quos! Quis corporis reiciendis voluptatum reprehenderit commodi voluptate blanditiis, dolore beatae officiis in tempora nihil consectetur explicabo laboriosam magni nisi consequatur quasi natus aliquid earum non. Numquam, ullam? Odit, perspiciatis dolore sint voluptatum praesentium quas reprehenderit, quaerat optio eligendi quo mollitia? Totam, quisquam dolores. </nav>
+        <main>
+            <h2>Tech Section</h2>
+            <h3><a href="#">robotics...</a></h3>
+            <h3><a href="#">programming...</a></h3>
+            <h3><a href="#">Development..</a></h3>
+
+        </main>
+       <div class="headline"> <b>Headline</b>
+        <p><a href="#">*Murder in mirpur see..</a></p>
+        <p><a href="#">*farmer killing rangpur see..</a></p>
+        <p><a href="#">*Ronaldo had hattrick see..</a></p>
+        <p><a href="#">*Skib al hasan now no-1 all rounder..</a></p>
+        <p><a href="#">*health desk see..</a></p>
+        <p><a href="#">*Shakib khan want to be died see..</a></p>
+        <p><a href="#">*Opu biassash had divorce by Shakib khan  see..</a></p>
+        <p><a href="#">*Porimoni arrested in his home see..</a></p>
+        <p><a href="#">*pakistan blust two bomb see..</a></p>
+        <p><a href="#">*America afaired russia see..</a></p>
+
+        <p><a href="#">*Putin on fire see..</a></p>
+       </div>
+        <div class="box1">  <h3> <u>Country News</u> </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam ea atque vel reiciendis est iste soluta unde, explicabo laudantium perspiciatis, libero voluptatibus officiis doloremque saepe tempora maxime voluptatem eaque.</p></div>
+        <div class="box2">  <h3><u>International News</u></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni soluta facere asperiores animi eveniet molestiae aperiam placeat in, corrupti corporis nemo. Commodi, dicta. Blanditiis maiores corrupti aliquam est repellendus pariatur, earum quibusdam saepe, ipsa, explicabo adipisci dolorem recusandae et.</p></div>
+        <div class="box3"><h3><u>Sports News</u></h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, delectus. Est modi, iusto repudiandae veritatis impedit fuga quibusdam vel aut eius ea, placeat eligendi enim ullam nemo cumque beatae quam!</p></div>
+        <footer><h4>Contact us</h4>
+        <h5>Phone:01867137378,01739343011,
+           <br> 2/8/F,BardhanBari,Mirpur-1,Dhaka-1216</h5></footer>
+          
+        
+
+
+    </div>
+</body>
+</html>
